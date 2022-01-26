@@ -1,13 +1,84 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+img{
+  max-width: 300px!important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.bg-primary {
+  background: rgb(102, 31, 218) !important;
+  background: linear-gradient(338deg, rgba(102, 31, 218, 1) 25%, rgba(72, 87, 133, 1) 100%) !important;
+}
+
+.bg-dark-2 {
+  background: rgb(27, 27, 27) !important;
+  background: linear-gradient(0deg, rgba(27, 27, 27, 1) 25%, rgba(36, 36, 36, 1) 100%) !important;
+}
+
+.w-full {
+  min-width: 100vw !important;
+}
+
+.h-full {
+  min-height: 100vh !important;
+}
+
+.bg-dark {
+  background: #0F0F0F !important;
+}
+
+.bg-glass {
+  background: rgba(255, 255, 255, 0.04) !important;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37) !important;
+  backdrop-filter: blur(5.5px) !important;
+  -webkit-backdrop-filter: blur(5.5px) !important;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+}
+
+.rounded-5 {
+  border-radius: 20px;
+}
+
+.btn-outline-primary-2 {
+  border: 1px solid linear-gradient(0deg, rgba(27, 27, 27, 1) 25%, rgba(36, 36, 36, 1) 100%) !important;
+}
+
+.b-b {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.btn-primary-2 {
+  border-radius: 20px;
+  padding:10px 20px;
+  font-size: 15px;
+  color:rgba(255, 255, 255, 0.5);
+  border:1px solid rgba(255, 255, 255, 0.5);
+}
+.btn-primary-2:hover{
+  color: lightgrey;
+}
+.active {
+  color: lightgrey;
+  background: linear-gradient(338deg, rgba(102, 31, 218, 1) 25%, rgba(72, 87, 133, 1) 100%) !important;
+  border:none;
+}
+.active:hover{
+  color: lightgrey;
+}
+.dropdown-item{
+  color:lightgrey;
+}
+.dropdown-item:hover{
+  background:rgba(0, 0, 0, 1);
+  color:white;
+}
+.text-gray {
+  color:lightgrey !important;
 }
