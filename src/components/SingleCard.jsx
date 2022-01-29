@@ -8,7 +8,7 @@ const SingleCard = (props) => {
                 <div className="rounded-5 w-100">
                     <img className="rounded-5 w-100" src={image}/>
                 </div>
-                <div className="ms-2 ms-xl-5 mt-1">
+                <div className="ms-2 mt-1">
                     <small className="text-muted">Auction</small>
                     <p className="text-gray">{auction}</p>
                 </div>
