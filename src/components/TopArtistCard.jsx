@@ -42,7 +42,7 @@ const TopArtistCard = () => {
 };
 
 const Card = styled.div`
-  max-width: 380px;
+  /* max-width: 380px; */
 `;
 const Content = styled.div``;
 

@@ -1,45 +1,59 @@
 import { useRef } from "react";
 import styled from "styled-components";
 
-const SileBar = () => {
-    const ref = useRef()
+const SileBar = (props) => {
+  const { isInMenu, isClose, closeMenu } = props;
+  const ref = useRef();
 
-    const handleActive = (e) => {
-        const items = [...ref.current.children]
-        // console.log(items);
-        items.forEach((item) => item.classList.remove("active-item"))
-        e.currentTarget.classList.add("active-item")
+  const handleActive = (e) => {
+    const items = [...ref.current.children];
+    // console.log(items);
+    items.forEach((item) => item.classList.remove("active-item"));
+    e.currentTarget.classList.add("active-item");
+    if (isInMenu) {
+      closeMenu();
     }
+  };
 
   return (
-    <Container className="list-unstyled m-0 p-0 d-none d-lg-block" ref={ref}>
-      <div className="m-0 p-0 mt-3 active-item" onClick={(e)=> handleActive(e)}>
-        <Item className="py-2">
+    <Container
+      className={
+        !isInMenu
+          ? "list-unstyled m-0 p-0 d-none d-lg-block"
+          : "list-unstyled m-0 p-0 "
+      }
+      ref={ref}
+    >
+      <div
+        className="m-0 p-0 mt-3 active-item"
+        onClick={(e) => handleActive(e)}
+      >
+        <Item className="py-2 cursor-pointer">
           <i class="bi bi-house-fill ms-4 px-3 py-2"></i>
         </Item>
       </div>
-      <div className="mt-4"  onClick={(e)=> handleActive(e)}>
-        <Item className="py-2">
+      <div className="mt-4" onClick={(e) => handleActive(e)}>
+        <Item className="py-2 cursor-pointer">
           <i class="bi bi-cart ms-4 px-3 py-2"></i>
         </Item>
       </div>
-      <div className="mt-4"  onClick={(e)=> handleActive(e)}>
-        <Item className="py-2">
+      <div className="mt-4" onClick={(e) => handleActive(e)}>
+        <Item className="py-2 cursor-pointer">
           <i class="bi bi-credit-card ms-4 px-3 py-2"></i>
         </Item>
       </div>
-      <div className="mt-4"  onClick={(e)=> handleActive(e)}>
-        <Item className="py-2">
+      <div className="mt-4" onClick={(e) => handleActive(e)}>
+        <Item className="py-2 cursor-pointer">
           <i class="bi bi-compass ms-4 px-3 py-2"></i>
         </Item>
       </div>
-      <div className="mt-4"  onClick={(e)=> handleActive(e)}>
-        <Item className="py-2">
+      <div className="mt-4" onClick={(e) => handleActive(e)}>
+        <Item className="py-2 cursor-pointer">
           <i class="bi bi-messenger ms-4 px-3 py-2"></i>
         </Item>
       </div>
-      <div className="mt-4"  onClick={handleActive}>
-        <Item className=" py-2">
+      <div className="mt-4" onClick={handleActive}>
+        <Item className=" py-2 cursor-pointer">
           <i class="bi bi-gear ms-4 px-3 py-2"></i>
         </Item>
       </div>
@@ -48,9 +62,8 @@ const SileBar = () => {
 };
 
 const Container = styled.ul`
-    @media (max-width:992px){
-        display: block;
-    }
+  @media (max-width: 992px) {
+  }
   .active-item {
     li {
       border-left: 3px solid #4551d7;

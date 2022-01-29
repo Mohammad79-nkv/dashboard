@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
-const Header = () => {
+const Header = (props) => {
+    const {closeMenu} = props
   return (
     <Container>
       <Content className="py-4 px-2 d-flex justify-content-start justify-content-lg-between align-items-center">
         <Menu className="d-lg-none pe-2">
-          <i class="bi bi-list cursor-pointer"></i>
+          <i class="bi bi-list cursor-pointer" onClick={() => closeMenu()}></i>
         </Menu>
         <div className="d-flex text-white align-items-center ms-3">
           <Logo className="bg-primary rounded-circle">
