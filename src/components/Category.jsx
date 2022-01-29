@@ -11,15 +11,15 @@ const Category = () => {
   };
 
   return (
-    <Container className="d-flex justify-content-between align-items-center">
-      <div className="d-none d-md-flex justify-content-center" ref={ref}>
+    <Container className="mt-4 mb-5 mx-auto d-flex justify-content-between align-items-center">
+      <div className="d-none d-lg-flex justify-content-center" ref={ref}>
         <button className="btn btn-primary-2 active mx-2" onClick={(e) => handleActive(e)}>Collectibles</button>
         <button className="btn btn-primary-2  mx-2" onClick={(e) => handleActive(e)}>Arts</button>
         <button className="btn btn-primary-2  mx-2" onClick={(e) => handleActive(e)}>Utility</button>
         <button className="btn btn-primary-2  mx-2" onClick={(e) => handleActive(e)}>Sports</button>
         <button className="btn btn-primary-2  mx-2" onClick={(e) => handleActive(e)}>Gaming</button>
       </div>
-      <div class="dropdown d-md-none me-lg-5">
+      <div class="dropdown d-lg-none me-lg-5">
         <button
           class="btn btn-primary-2 active dropdown-toggle me-lg-5"
           type="button"
@@ -50,7 +50,7 @@ const Category = () => {
 };
 
 const Container = styled.div`
-    max-width: 1000px;
+    /* max-width: 1100px; */
 `;
 
 export default Category;

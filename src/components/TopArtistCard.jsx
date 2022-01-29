@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const TopArtistCard = () => {
   return (
-    <Card className="bg-glass text-light p-4">
+    <Card className="bg-glass text-light p-2 pt-4 px-4 ">
       <Content>
         <div className="mb-4">
           <h5>Top Artist</h5>
@@ -23,7 +23,7 @@ const TopArtistCard = () => {
           </div>
           <small className="text-primary ms-5 cursor-pointer">Follow</small>
         </div>
-        <div className="d-flex align-items-center  pb-3 mb-3">
+        <div className="d-flex align-items-center  pb-3">
           <i class="bi bi-person me-2 p-2 px-3 bg-dark-2 rounded-circle"></i>
           <div className="me-5 ms-2">
             <p className="m-0">Santel bauer</p>
@@ -31,7 +31,7 @@ const TopArtistCard = () => {
           </div>
           <small className="text-primary ms-5 cursor-pointer">Follow</small>
         </div>
-        <div className="my-2 mt-4 d-flex justify-content-center align-items-center">
+        <div className="my-2 d-flex justify-content-center align-items-center">
           <h6 className="text-muted m-0 cursor-pointer">
             View All <i class="bi bi-arrow-right"></i>
           </h6>
