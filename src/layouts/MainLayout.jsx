@@ -54,7 +54,9 @@ const MainLayout = () => {
   );
 };
 
-const Container = styled.div``;
+const Container = styled.div`
+    overflow-x:hidden ;
+`;
 const Content = styled.div``;
 const LeftBar = styled.div``;
 const RightBar = styled.div``;

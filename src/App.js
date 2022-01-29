@@ -9,7 +9,7 @@ import MainLayout from "./layouts/MainLayout";
 
 function App() {
   return (
-    <div className="App bg-dark w-full h-full p-0 m-0 ">
+    <div className="bg-dark h-full p-0 m-0 ">
       <MainLayout />
     </div>
   );
