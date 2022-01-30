@@ -43,10 +43,14 @@ const PaymentCard = () => {
               </div>
             </div>
             <div className="d-flex align-items-start  mb-4">
-              <i class="text-gray bg-dark-2 px-2 py-2 rounded-circle"><small>NFT</small></i>
+              <i class="text-gray bg-dark-2 px-2 py-2 rounded-circle">
+                <small>NFT</small>
+              </i>
               <div className="d-flex flex-column ms-3">
                 <p className="m-0">NFT Pixel Project</p>
-                <small className="text-muted">1 edition listed for 0.018 BTC</small>
+                <small className="text-muted">
+                  1 edition listed for 0.018 BTC
+                </small>
                 <small className="text-muted">30 min ago</small>
               </div>
             </div>
@@ -72,7 +76,11 @@ const Card = styled.div`
 const Content = styled.div``;
 const User = styled.div``;
 const CardBank = styled.div`
-  background: #252525;
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   i {
     display: inline-block;
     transform: rotate(20deg);

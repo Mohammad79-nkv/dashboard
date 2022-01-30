@@ -13,6 +13,7 @@ const SinglCardWrapper = () => {
      );
 }
 const Container = styled.div`
+overflow-y:hidden !important;
 &::-webkit-scrollbar {
   display: none;
 }

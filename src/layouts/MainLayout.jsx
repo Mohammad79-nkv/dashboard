@@ -26,8 +26,8 @@ const MainLayout = () => {
             <div>
               <SileBar closeMenu={handelCloseMenu} isClose={closeMenu} />
             </div>
-            <div className="mx-auto w-100 ms-2 ms-xl-5">
-              <div className="d-flex flex-column justify-content-between flex-xl-row align-items-center ms-2   w-100">
+            <div className="mx-auto w-100  ms-xl-5">
+              <div className="d-flex flex-column justify-content-between flex-xl-row align-items-center ms-md-3  w-100">
                 <div className="mb-2 mb-xl-0">
                   <MainCard />
                 </div>
@@ -35,7 +35,7 @@ const MainLayout = () => {
                   <TopArtistCard />
                 </div>
               </div>
-              <div>
+              <div className="mx-2">
                 <Category />
               </div>
               <div>

@@ -27,9 +27,9 @@ const MainCard = () => {
               <h4>0.0840 BTC</h4>
             </div>
           </div>
-          <div className="mt-5">
+          <div className="mt-5 d-flex justify-content-between align-items-center w-100">
             <button className="btn text-white rounded-5 px-4 bg-primary">Place a bid</button>
-            <button className="btn btn-outline-primary ms-4 rounded-5 px-4 text-white">View Art</button>
+            <button className="ms-2 btn btn-outline-primary  rounded-5 px-4 text-white">View Art</button>
           </div>
         </RightBar>
       </Content>
@@ -45,6 +45,13 @@ const Content = styled.div`
   }
 `;
 const LeftBar = styled.div``;
-const RightBar = styled.div``;
+const RightBar = styled.div`
+  button {
+    @media (min-width: 765px) and (max-width: 925px){
+      padding: 8px 10px !important;
+      /* font-size: 12px; */
+    }
+}
+`;
 
 export default MainCard;

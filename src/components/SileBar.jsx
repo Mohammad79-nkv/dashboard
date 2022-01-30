@@ -83,6 +83,7 @@ const Item = styled.li`
   i {
     font-size: 22px;
     border-radius: 15px;
+    color:rgba(255, 255, 255, 0.4);
   }
 `;
 

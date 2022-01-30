@@ -7,27 +7,33 @@ const TopArtistCard = () => {
         <div className="mb-4">
           <h5>Top Artist</h5>
         </div>
-        <div className="d-flex align-items-center b-b pb-3 mb-3">
-          <i class="bi bi-person me-2 p-2 px-3 bg-dark-2 rounded-circle"></i>
-          <div className="me-5 ms-2">
-            <p className="m-0">Gabriel Dean</p>
-            <small className="text-muted">410 Items</small>
+        <div className="d-flex align-items-center justify-content-between b-b pb-3 mb-3">
+          <div className="me-5 ms-2 d-flex">
+            <i class="bi bi-person me-2 p-2 px-3 bg-dark-2 rounded-circle"></i>
+            <div>
+              <p className="m-0">Gabriel Dean</p>
+              <small className="text-muted">410 Items</small>
+            </div>
           </div>
           <small className="text-primary ms-5 cursor-pointer">Follow</small>
         </div>
-        <div className="d-flex align-items-center b-b pb-3 mb-3">
-          <i class="bi bi-person me-2 p-2 px-3 bg-dark-2 rounded-circle"></i>
-          <div className="me-5 ms-2">
-            <p className="m-0">Mathew Lean</p>
-            <small className="text-muted">380 Items</small>
+        <div className="d-flex align-items-center b-b pb-3 mb-3 justify-content-between">
+          <div className="me-5 ms-2 d-flex">
+            <i class="bi bi-person me-2 p-2 px-3 bg-dark-2 rounded-circle"></i>
+            <div>
+              <p className="m-0">Mathew Lean</p>
+              <small className="text-muted">380 Items</small>
+            </div>
           </div>
           <small className="text-primary ms-5 cursor-pointer">Follow</small>
         </div>
-        <div className="d-flex align-items-center  pb-3">
-          <i class="bi bi-person me-2 p-2 px-3 bg-dark-2 rounded-circle"></i>
-          <div className="me-5 ms-2">
-            <p className="m-0">Santel bauer</p>
-            <small className="text-muted">320 Items</small>
+        <div className="d-flex align-items-center justify-content-between  pb-3">
+          <div className="me-5 ms-2 d-flex">
+            <i class="bi bi-person me-2 p-2 px-3 bg-dark-2 rounded-circle"></i>
+            <div>
+              <p className="m-0">Santel bauer</p>
+              <small className="text-muted">320 Items</small>
+            </div>
           </div>
           <small className="text-primary ms-5 cursor-pointer">Follow</small>
         </div>
